@@ -1,0 +1,4 @@
+GET http://localhost:1337/v1/foos
+
+Accept: application/json
+Content-Type: application/json

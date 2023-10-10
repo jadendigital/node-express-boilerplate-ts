@@ -1,6 +1,6 @@
 //import joi from 'joi'
 
-export const exampleValidation = {
+export const foosValidation = {
     // query: joi.object().keys({
     //     foo: joi.string().required(),
     // }),
