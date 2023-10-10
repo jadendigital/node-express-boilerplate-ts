@@ -14,7 +14,10 @@ export const errorConverter = (
     let error = err
     if (!(error instanceof ApiError)) {
         const statusCode = error.statusCode || httpStatus.INTERNAL_SERVER_ERROR
+
+        // eslint-disable-next-line security/detect-object-injection
         const message = error.message || httpStatus[statusCode]
+
         error = new ApiError(statusCode, message, false, err.stack)
     }
     next(error)
