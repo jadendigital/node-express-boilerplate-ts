@@ -1,6 +1,7 @@
 {
   "name": "node-express-boilerplate-ts",
   "main": "src/index.ts",
+  "license": "UNLICENSED",
   "engines": {
     "node": ">=18.0.0"
   },
